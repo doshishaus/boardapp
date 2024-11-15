@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 import { BBSData } from "../types/types";
 
-interface BBSDataProps {
+type BBSDataProps={
   bbsData: BBSData;
 }
 
