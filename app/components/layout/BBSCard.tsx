@@ -1,19 +1,36 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "lucide-react";
+import React from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import Link from "next/link";
+import { BBSData } from "../types/types";
 
-export default function BBSCard() {
-    return (
-        <Card className="w-[350px]">
-            <CardHeader>
-                <CardTitle>カードタイトル</CardTitle>
-                <CardDescription>カードの説明</CardDescription>
-            </CardHeader>
-            <CardContent>
-                カード内の内容
-            </CardContent>
-            <CardFooter className="flex justify-between">
-                <Link href={"/bbs-posts/1"}>詳細ページリンク</Link>
-            </CardFooter>
-        </Card>
-    )
+interface BBSDataProps {
+  bbsData: BBSData;
 }
+
+const BBSCard = ({ bbsData }: BBSDataProps) => {
+  const { id, title, content, createdAt, username } = bbsData;
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{username}</CardDescription>
+      </CardHeader>
+      <CardContent>{content}</CardContent>
+      <CardFooter className="flex justify-between">
+        <Link href={`/bbs-posts/${id}`} className="text-blue-500">
+          Read More
+        </Link>
+      </CardFooter>
+    </Card>
+  );
+};
+
+export default BBSCard;
