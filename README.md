@@ -1,3 +1,46 @@
+アプリケーション概要 
+アプリ雛形の作成 
+ローカルサーバー起動 
+ヘッダーコンポーネントの作成 
+v0の紹介
+掲示板のレイアウトの作成
+Supabaseの設定 
+新規プロジェクト追加とDBパスワード設定 
+Prismaの初期設定 
+DBマイグレーションの実行 
+RLS（Row Level Security）の設定とポリシー追加 
+データ取得の動作確認 
+Prisma Clientのインストール 
+Prisma Clientのベストプラクティス紹介 
+Prisma Clientのインポート方法 
+supabaseで投稿データの作成方法 
+投稿データの取得方法 
+データ取得方法の使い分け解説 
+レンダリング解説：SSGが使えない理由 
+Next.js公式ドキュメントのデータフェッチ方法紹介 
+SSR設定とAPI作成
+投稿データ全取得APIの作成
+データ型の作成
+詳細ページの作成と動的ルーティングの説明
+詳細ページ用のAPIの作成
+値を動的に取得する方法、paramsについての説明
+エンドポイントの動的な切り替えのためテンプレートリテラルを使用
+投稿ページの作成
+shadcnのインストール
+React Hook Formの設定
+formSchemaの作成とバリデーションの設定
+onSubmit関数のガワを作成
+formの修正
+投稿データ作成APIの作成
+onSubmit関数の処理を作成
+投稿データ作成APIの検証、レコードの作成の確認
+投稿データがページに表示されないエラーの解決
+サーバーアクションの解説
+サーバーアクションの実装
+サーバーアクションの検証とサーバーアクション が使えるケースの説明
+投稿後のリダイレクトの設定（サーバーサイドのリダイレクト設定）
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
